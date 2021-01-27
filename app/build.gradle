@@ -12,6 +12,9 @@ android {
             cmake {
                 arguments '-DANDROID_STL=c++_static'
             }
+            ndk {
+                abiFilters "armeabi"
+            }
         }
     }
     buildTypes {
@@ -33,6 +36,7 @@ dependencies {
     implementation 'com.github.k4ttt:ZGlTest:1.0.0'
     implementation 'com.jakewharton:butterknife:10.1.0'
 //    implementation project(":zglsurface")
+    implementation project(":videoview")
     annotationProcessor 'com.jakewharton:butterknife-compiler:10.1.0'
 
 }

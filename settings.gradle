@@ -1,2 +1,3 @@
+include ':videoview'
 include ':app', ':zglsurface'
 rootProject.name='OpenGlLearn'
